@@ -25,7 +25,7 @@
         </h5>
         <h1 class="text-bn">{{ post.title }}</h1>
         <p class="mt-1 mb-4 text-primary-600 dark:text-primary-400 text-bn">{{ post.description }}</p>
-        <nuxt-content :document="post" />
+        <nuxt-content :document="post" class="text-bn" />
       </article>
     </section>
   </main>
