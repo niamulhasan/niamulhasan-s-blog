@@ -16,18 +16,18 @@
         <div class="flex flex-col w-1/2 space-y-4">
           <div class="flex justify-between items-start">
             <nuxt-link :to="`${postType}/${post.slug}`">
-              <h2 class="text-3xl font-bold">{{ post.title }}</h2>
+              <h2 class="text-3xl font-bold text-bn">{{ post.title }}</h2>
             </nuxt-link>
             <div class="bg-yellow-400 font-bold rounded-xl p-2">7.2</div>
           </div>
           <div>
-            <div class="text-sm text-gray-400">{{ post.category }}</div>
+            <div class="text-sm text-gray-400 text-bn">{{ post.category }}</div>
             <div class="text-lg text-gray-800">{{ formatDate(post.createdAt) }}</div>
           </div>
-          <p class="text-gray-400 max-h-40 overflow-y-hidden">
+          <p class="text-gray-400 max-h-40 overflow-y-hidden text-bn">
             {{ post.description }}
           </p>
-          <div class="flex text-2xl font-bold text-a">$83.90</div>
+          <!-- <div class="flex text-2xl font-bold text-a">$83.90</div> -->
         </div>
       </div>
     </div>
