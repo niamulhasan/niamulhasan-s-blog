@@ -1,22 +1,63 @@
 <template>
-  <nav class="scrim-bg fixed z-40 top-0 inset-x-0 pt-3 px-3" aria-label="Main Menu">
-    <ul class="flex">
-      <li class="flex-1">
-        <nuxt-link class="btn block" to="/">Home</nuxt-link>
-      </li>
-      <li class="flex-1 ml-2">
-        <nuxt-link class="btn block" to="/blog">Blog</nuxt-link>
-      </li>
-      <li class="flex-1 ml-2">
-        <nuxt-link class="btn block" to="/projects">Projects</nuxt-link>
-      </li>
-    </ul>
-  </nav>
+  <div class="w-full shadow-sm scrim-bg fixed z-40 top-0 inset-x-0">
+    <nav
+      class="
+        flex
+        w-full
+        items-center
+        justify-between
+        flex-wrap
+        bg-white
+        dark:bg-gray-800
+        py-0
+        mx-auto
+        px-8
+        pt-5
+        pb-2
+        lg:pt-0
+        lg:pb-0
+      "
+    >
+      <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <a class="flex item-center text-white no-underline hover:text-white hover:no-underline pl-2" href="#">
+          <div class="h-8 text-blue-500 w-max block mx-auto rounded-sm text-bn text-xl">নিয়ামুল হাসানের ব্লগ</div>
+        </a>
+      </div>
+
+      <div class="block lg:hidden">
+        <button id="nav-toggle" class="focus:outline-none">
+          <div class="h-1 bg-gray-300 w-8 mb-1 block mx-auto rounded-sm"></div>
+          <div class="h-1 bg-gray-300 w-8 mb-1 block mx-auto rounded-sm"></div>
+          <div class="h-1 bg-gray-300 w-8 mb-1 block mx-auto rounded-sm"></div>
+        </button>
+      </div>
+
+      <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0" id="nav-content">
+        <ul class="list-reset lg:flex justify-end flex-1 items-center">
+          <li class="mr-3">
+            <nuxt-link class="inline-block py-4 px-6 active:text-gray-900 no-underline py-4 text-bn" to="/"
+              >নীড়পাতা</nuxt-link
+            >
+          </li>
+          <li class="mr-3">
+            <nuxt-link class="inline-block py-4 px-6 active:text-gray-900 no-underline py-4 text-bn" to="/blog">
+              ব্লগ পাতা
+            </nuxt-link>
+          </li>
+          <li class="mr-3">
+            <nuxt-link class="inline-block py-4 px-6 active:text-gray-900 no-underline py-4 text-bn" to="/projects">
+              সাহিত্য পাতা
+            </nuxt-link>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
 }
 </script>
 
@@ -38,7 +79,7 @@ export default {
   }
 }
 .nuxt-link-exact-active {
-  @apply text-gray-200 border-gray-400 bg-gray-800 bg-opacity-25 cursor-default;
+  @apply text-blue-600 border-b-2 border-blue-600 hover:bg-blue-100 transition duration-300;
 }
 
 .light {
@@ -49,17 +90,25 @@ export default {
     }
   }
   & .nuxt-link-exact-active {
-    @apply text-primary-700 border-gray-600 bg-gray-100;
+    @apply text-blue-600 border-b-2 border-blue-600 hover:bg-blue-100 transition duration-300;
   }
 }
 
 /* Need two because of smoother switching between color modes */
 @keyframes fadeIn1 {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @keyframes fadeIn2 {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 </style>

@@ -65,8 +65,8 @@ collections:
           label: 'Project Category',
           name: 'category',
           widget: 'select',
-          default: 'animals',
-          options: [{ label: 'Animals', value: 'animals' }, { label: 'Food', value: 'food' }],
+          default: 'অযথা',
+          options: [{ label: 'অযথা', value: 'অযথা' }, { label: 'সাহিত্য', value: 'সাহিত্য' }, { label: 'অ-সাহিত্য', value: 'অ-সাহিত্য' }],
         }
       - { label: 'Title', name: 'title', widget: 'string', required: true }
       - { label: 'Description', name: 'description', widget: 'string', required: false }
