@@ -9,7 +9,7 @@
                 নিয়ামুল হাসান <br class="hidden md:block" />এর ব্লগ
               </h1>
               <h3 class="text-blue-600 mb-7 leading-tight text-bn font-thin">
-                আপনার নষ্ট করার মত কিছু সময় থাকলে, এখানে আসলেই নষ্ট হবে- কথা দিচ্ছি
+                আপনার নষ্ট করার মত কিছু সময় থাকলে, এখানে নষ্ট হবেই- কথা দিচ্ছি
               </h3>
               <div>
                 <span class="inline-block w-40 h-1 rounded-full bg-indigo-500"></span>

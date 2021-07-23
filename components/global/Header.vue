@@ -90,7 +90,7 @@ export default {
     }
   }
   & .nuxt-link-exact-active {
-    @apply text-blue-600 border-b-2 border-blue-600 hover:bg-blue-100 transition duration-300;
+    @apply text-blue-600 border-b-2 border-blue-600 bg-blue-100 transition duration-300;
   }
 }
 

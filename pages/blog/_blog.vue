@@ -31,6 +31,12 @@
   </main>
 </template>
 
+<style scoped>
+p {
+  font-family: 'Baloo Da 2' !important;
+}
+</style>
+
 <script>
 export default {
   async asyncData({ $content, params, error }) {
