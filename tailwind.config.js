@@ -46,7 +46,11 @@ module.exports = {
       }
     }
   },
-  variants: {},
+  variants: {
+    extend: {
+      backgroundColor: ['dark']
+    }
+  },
   plugins: [],
   purge: {
     // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css

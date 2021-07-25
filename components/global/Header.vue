@@ -7,8 +7,7 @@
         items-center
         justify-between
         flex-wrap
-        bg-white
-        dark:bg-gray-800
+        bg-gray-800
         py-0
         mx-auto
         px-8
@@ -16,6 +15,7 @@
         pb-2
         lg:pt-0
         lg:pb-0
+        header-dark-fix
       "
     >
       <div class="flex items-center flex-shrink-0 text-white mr-6">
@@ -62,6 +62,10 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
+.light .header-dark-fix {
+  background: #fff;
+}
+
 .scrim-bg {
   &::before {
     content: '';

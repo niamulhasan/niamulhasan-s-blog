@@ -1,7 +1,9 @@
 <template>
   <div v-if="posts.length > 0" class="grid sm:grid-cols-1 md:grid-cols-2 justify-center gap-3">
     <div v-for="(post, index) in posts" :key="index" class="py-3 sm:max-w-xl sm:mx-auto md:mb-20">
-      <div class="bg-white shadow-lg border-gray-100 max-h-80 border sm:rounded-3xl p-8 flex space-x-8">
+      <div
+        class="bg-gray-800 shadow-lg border-gray-700 max-h-80 border sm:rounded-3xl p-8 flex space-x-8 card-dark-fix"
+      >
         <template v-if="postType === 'projects'">
           <div class="h-48 overflow-visible w-1/2">
             <img v-if="post.cover" :src="post.cover" class="rounded-3xl shadow-lg h-80 w-full object-cover" alt="" />
@@ -18,7 +20,7 @@
             <nuxt-link :to="`${postType}/${post.slug}`">
               <h2 class="text-3xl font-bold text-bn">{{ post.title }}</h2>
             </nuxt-link>
-            <div class="bg-yellow-400 font-bold rounded-xl p-2">7.2</div>
+            <!-- <div class="bg-yellow-400 font-bold rounded-xl p-2">7.2</div> -->
           </div>
           <div>
             <div class="text-sm text-gray-400 text-bn">{{ post.category }}</div>
@@ -81,6 +83,13 @@
     {{ amount > 1 ? 'Posts not found' : 'Post not found' }}
   </p>
 </template>
+
+<style scoped>
+.light .card-dark-fix {
+  background: #fff;
+  border-color: #f1f1f1;
+}
+</style>
 
 <script>
 export default {
