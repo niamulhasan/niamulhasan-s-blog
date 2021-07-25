@@ -55,7 +55,7 @@ export default {
           '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">'
       }
     ],
-
+    __dangerouslyDisableSanitizers: ['noscript'],
     script: [
       {
         type: 'module',
@@ -66,7 +66,6 @@ export default {
         src: 'https://www.statcounter.com/counter/counter.js'
       }
     ],
-    __dangerouslyDisableSanitizers: ['noscript']
   },
   /*
    ** Customize the progress-bar color
