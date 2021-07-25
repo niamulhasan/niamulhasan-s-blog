@@ -55,6 +55,17 @@ export default {
           '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">'
       }
     ],
+
+    script: [
+      {
+        type: 'module',
+        src: 'https://raw.githubusercontent.com/niamulhasan/cdn/main/myblog/statcounter.js'
+      },
+      {
+        type: 'module',
+        src: 'https://www.statcounter.com/counter/counter.js'
+      }
+    ],
     __dangerouslyDisableSanitizers: ['noscript']
   },
   /*
@@ -96,7 +107,7 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) { }
   },
   /*
    ** Custom additions configuration
