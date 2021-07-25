@@ -25,27 +25,27 @@
                   </div>
                 </div>
                 <div>
-                  <a href="https://niamul.dev"
-                    ><button
-                      class="
-                        block
-                        w-full
-                        bg-indigo-500
-                        hover:bg-indigo-700
-                        focus:bg-indigo-700
-                        transition-colors
-                        text-white
-                        rounded-lg
-                        px-3
-                        py-2
-                        font-thin
-                        text-bn
-                        rounded-full
-                      "
-                    >
-                      আমার পোর্টফোলিও
-                    </button></a
+                  <a
+                    href="https://niamul.dev"
+                    class="
+                      block
+                      w-full
+                      bg-indigo-500
+                      hover:bg-indigo-700
+                      focus:bg-indigo-700
+                      transition-colors
+                      text-white
+                      rounded-lg
+                      px-3
+                      py-2
+                      font-thin
+                      text-bn
+                      rounded-full
+                      text-center
+                    "
                   >
+                    আমার পোর্টফোলিও
+                  </a>
                   <div class="flex justify-center">
                     <div class="max-w-md mx-auto my-3">
                       <ul class="grid grid-flow-col grid-cols-4 grid-rows-1 gap-4">

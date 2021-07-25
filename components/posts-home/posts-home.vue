@@ -24,7 +24,7 @@
           </div>
           <div>
             <div class="text-sm text-gray-400 text-bn">{{ post.category }}</div>
-            <div class="text-lg text-gray-800">{{ formatDate(post.createdAt) }}</div>
+            <div class="text-lg text-gray-800 text-bn">{{ formatDate(post.createdAt) }}</div>
           </div>
           <p class="text-gray-400 max-h-40 overflow-y-hidden text-bn">
             {{ post.description }}
@@ -33,6 +33,8 @@
         </div>
       </div>
     </div>
+
+    <div id="disqus_thread"></div>
   </div>
 
   <!-- <ul v-if="posts.length > 0" class="cards">
