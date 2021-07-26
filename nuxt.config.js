@@ -58,13 +58,11 @@ export default {
     __dangerouslyDisableSanitizers: ['noscript'],
     script: [
       {
-        type: 'stripe',
-        src: 'https://raw.githubusercontent.com/niamulhasan/cdn/main/myblog/statcounter.js',
-        defer: true
+        src: 'https://www.statcounter.com/counter/counter.js',
+        async: true
       },
       {
-        type: 'stripe',
-        src: 'https://www.statcounter.com/counter/counter.js',
+        src: 'https://raw.githubusercontent.com/niamulhasan/cdn/main/myblog/statcounter.js',
         defer: true
       }
     ],
