@@ -53,13 +53,17 @@ export default {
       {
         innerHTML:
           '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">'
+      },
+      {
+        innerHTML: '<div class="statcounter"></div>',
+        body: true
       }
     ],
     __dangerouslyDisableSanitizers: ['noscript'],
     script: [
       {
         type: 'stripe',
-        src: 'https://niamulhasan.github.io/cdn/myblog/statcounter.js',
+        src: '/statcounter.js',
         defer: true,
         body: true
       },
