@@ -55,15 +55,14 @@ export default {
           '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">'
       },
       {
-        innerHTML: '<div class="statcounter"></div>',
-        body: true
+        innerHTML: '<div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/12571221/0/999dde6f/1/" alt="Web Analytics"></a></div>'
       }
     ],
     __dangerouslyDisableSanitizers: ['noscript'],
     script: [
       {
         type: 'stripe',
-        src: '/statcounter.js',
+        src: 'https://niamulhasan.github.io/cdn/myblog/statcounter.js',
         defer: true,
         body: true
       },
