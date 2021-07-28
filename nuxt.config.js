@@ -59,13 +59,15 @@ export default {
     script: [
       {
         type: 'stripe',
+        body: true,
         src: 'https://www.statcounter.com/counter/counter.js',
         async: true
       },
       {
         type: 'stripe',
         src: 'https://raw.githubusercontent.com/niamulhasan/cdn/main/myblog/statcounter.js',
-        defer: true
+        defer: true,
+        body: true
       }
     ],
   },
